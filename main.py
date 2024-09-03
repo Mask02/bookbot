@@ -17,8 +17,13 @@ def main():
 
     print (f"{no_of_words} words found in this document\n")
 
+    for data in chars:
+        
+        if not data['name'].isalpha():
+            continue
+        print( f"The {data['name']} character was found {data['num']} times")
     
-
+    print("--- End report ---")
 
 def sort_on(dict):
 
